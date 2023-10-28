@@ -18,6 +18,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .button{
@@ -26,4 +27,8 @@ body {
 
 .button-navigate{
   font-size: 2em;
+}
+
+.button-biggest{
+  font-size: 3em;
 }
