@@ -6,3 +6,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+#below-cover {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
