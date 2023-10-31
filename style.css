@@ -16,6 +16,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 3em 0 1em 0;
 }
 
 #button-container {
@@ -39,4 +40,21 @@ body {
 
 #cover {
   width: 450px;
+}
+
+#playlist-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1 0 4em 0;
+}
+
+
+#song-name{
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.light-color {
+  color: rgb(139, 153, 156);
 }
