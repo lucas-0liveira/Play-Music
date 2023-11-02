@@ -1,0 +1,1 @@
+songName = document.getElementById
