@@ -1,1 +1,1 @@
-songName = document.getElementById
+const songName = document.getElementById('song-name');
