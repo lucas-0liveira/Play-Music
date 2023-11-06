@@ -7,3 +7,5 @@ songName.innerText = 'Jet To The West';
 function playsong(){
     song.play();
 }
+
+play.addEventListener('click', playsong);
