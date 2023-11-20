@@ -68,4 +68,11 @@ function playPauseDecider(){
     }
 }
 
+function initializeSong(){
+    cover.src = `images/${playlist[index].file}.jpeg`;
+    song.src = `songs/${playlist[index].file}.mp3`;
+    songName.innerText = playlist[index].songName;
+    bandName
+}
+
 play.addEventListener('click', playPauseDecider); 
