@@ -23,7 +23,7 @@ const LouisV = {
 };
 
 const Planos = {
-    songName : 'Planos ft. Nate Shawty! (Prod. Dexhenry & Rxmisz)',
+    songName : 'Planos ft. Nate Shawty!',
     artist : 'Pedrwthekid',
     file : 'planos'
 };
@@ -42,7 +42,7 @@ const Bando = {
 
 let isPlaying = false;
 const playlist = [JetToTheWest, LuxoNoMorro, LouisV, Planos, Sommelier, Bando];
-let index = 0;
+let index = 3;
 
 
 function playsong(){
@@ -63,7 +63,7 @@ function playPauseDecider(){
     if(isPlaying === true){
         pausesong();
     }
-    else{
+    else {
         playsong();
     }
 }
@@ -72,7 +72,9 @@ function initializeSong(){
     cover.src = `images/${playlist[index].file}.jpeg`;
     song.src = `songs/${playlist[index].file}.mp3`;
     songName.innerText = playlist[index].songName;
-    bandName
+    bandName.innerText = playlist[index].artist;
 }
+
+initializeSong();
 
 play.addEventListener('click', playPauseDecider); 
