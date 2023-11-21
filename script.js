@@ -78,11 +78,25 @@ function initializeSong(){
 }
 
 function previousSong(){
-    index -= 1;
+    if(index === 0){
+        index = playlist.length - 1;
+    }
+    else {
+        index -= 1;
+    }
+    initializeSong();
+    playsong();
 }
 
 function nextSong(){
-    index += 1;
+    if(index === playlist.length - 1){
+    index = 0;
+    }
+    else{
+        index += 1;
+    }
+    initializeSong();
+    playsong();
 }
 
 initializeSong();
