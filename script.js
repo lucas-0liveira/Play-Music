@@ -77,6 +77,15 @@ function initializeSong(){
     bandName.innerText = playlist[index].artist;
 }
 
+function previousSong(){
+    index -= 1;
+}
+
+function nextSong(){
+    index += 1;
+}
+
 initializeSong();
 
 play.addEventListener('click', playPauseDecider); 
+previous.addEventListener('click',)
