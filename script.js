@@ -5,6 +5,7 @@ const cover = document.getElementById('cover');
 const play = document.getElementById('play');
 const next = document.getElementById('next');
 const previous = document.getElementById('previous');
+const currentProgress = document.getElementById('current-progress'); 
 
 const JetToTheWest = {
     songName : 'Jet To The West',
@@ -99,9 +100,16 @@ function nextSong(){
     playsong();
 }
 
+function updateProgressBar(){
+    song.currentTime
+    song.duration
+    const barwidth = (song.currentTime/song.duration)*100;
+    currentProgress
+}
+
 initializeSong();
 
 play.addEventListener('click', playPauseDecider); 
 previous.addEventListener('click', previousSong);
 next.addEventListener('click',nextSong);
-song.addEventListener('timeupdate');
+song.addEventListener('timeupdate', updateProgressBar);
