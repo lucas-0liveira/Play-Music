@@ -3,6 +3,8 @@ const bandName = document.getElementById('band-name');
 const song = document.getElementById('audio');
 const cover = document.getElementById('cover');
 const play = document.getElementById('play');
+const next = document.getElementById('next');
+const previous = document.getElementById('previous');
 
 const JetToTheWest = {
     songName : 'Jet To The West',
