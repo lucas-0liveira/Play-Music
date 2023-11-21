@@ -102,4 +102,5 @@ function nextSong(){
 initializeSong();
 
 play.addEventListener('click', playPauseDecider); 
-previous.addEventListener('click',)
+previous.addEventListener('click', previousSong);
+next.addEventListener('click',nextSong);
