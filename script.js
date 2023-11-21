@@ -104,7 +104,7 @@ function updateProgressBar(){
     song.currentTime
     song.duration
     const barwidth = (song.currentTime/song.duration)*100;
-    currentProgress
+    currentProgress.style.setProperty('--progress', `${barwidth}%`);
 }
 
 initializeSong();
