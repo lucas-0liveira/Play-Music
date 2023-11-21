@@ -42,7 +42,7 @@ const Bando = {
 
 let isPlaying = false;
 const playlist = [JetToTheWest, LuxoNoMorro, LouisV, Planos, Sommelier, Bando];
-let index = 3;
+let index = 0;
 
 
 function playsong(){
