@@ -107,7 +107,7 @@ function updateProgressBar(){
     currentProgress.style.setProperty('--progress', `${barwidth}%`);
 }
  
-initializeSong() 
+initializeSong(); 
 
 play.addEventListener('click', playPauseDecider); 
 previous.addEventListener('click', previousSong);
