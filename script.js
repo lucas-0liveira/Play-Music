@@ -106,8 +106,8 @@ function updateProgressBar(){
     const barwidth = (song.currentTime/song.duration)*100;
     currentProgress.style.setProperty('--progress', `${barwidth}%`);
 }
-
-initializeSong();
+ 
+initializeSong() 
 
 play.addEventListener('click', playPauseDecider); 
 previous.addEventListener('click', previousSong);
