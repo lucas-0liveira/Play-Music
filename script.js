@@ -112,7 +112,7 @@ function jumpTo(event){
     const width = progressContainer.clientWidth;
     const ClickPosition = event.offsetX; 
     const jumpToTime = (ClickPosition/width)*song.duration;
-    
+    song.currentTime = jumpToTime;
 }
  
 initializeSong();
