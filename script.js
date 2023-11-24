@@ -107,6 +107,13 @@ function updateProgressBar(){
     const barwidth = (song.currentTime/song.duration)*100;
     currentProgress.style.setProperty('--progress', `${barwidth}%`);
 }
+
+function jumpTo(event){
+    const width = progressContainer.clientWidth;
+    const ClickPosition = event.offsetX; 
+    const jumpToTime = (ClickPosition/width)*song.duration;
+    
+}
  
 initializeSong();
 
