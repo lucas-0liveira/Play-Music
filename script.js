@@ -119,15 +119,27 @@ function jumpTo(event){
 }
 
 function shuffleArray(preShuffleArray){
-    let size = sortedPlaylist.length;
+    const size = preShuffleArray.length;
     let currentIndex = size - 1;
-    while(currentIndex) ;
+    while(currentIndex > 0){
+        let randomIndex = Math.floor(Math.random()*size);
+        let aux = preShuffleArray[currentIndex];
+        preShuffleArray[currentIndex] = preShuffleArray[randomIndex];
+        preShuffleArray[randomIndex] = aux;
+        currentIndex -= 1;
+    }
 }
 
 function shuffleButtonClicked(){
     if(isShuffled === false){
         isShuffled = true;
-        shuffleArray();
+        shuffleArray(sortedPlaylist);
+        shuffleButton.classList.add('button-active');
+    }
+    else{
+        isShuffled = false;
+        sortedPlaylist = [...originalplaylist];
+        shuffleButton.classList.remove('button-active');
     }
 }
  
