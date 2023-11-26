@@ -49,6 +49,7 @@ const Bando = {
 
 let isPlaying = false;
 let isShuffled = false;
+let repeatOn = false;
 const originalplaylist = [JetToTheWest, LuxoNoMorro, LouisV, Planos, Sommelier, Bando];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
@@ -144,6 +145,10 @@ function shuffleButtonClicked(){
         shuffleButton.classList.remove('button-active');
     }
 }
+
+function repeatButtonClicked(){
+
+}
  
 initializeSong();
 
@@ -153,3 +158,4 @@ next.addEventListener('click',nextSong);
 song.addEventListener('timeupdate', updateProgressBar);
 progressContainer.addEventListener('click', jumpTo);
 shuffleButton.addEventListener('click', shuffleButtonClicked);
+repeatButton.addEventListener('click', repeatButtonClicked);
