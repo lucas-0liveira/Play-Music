@@ -9,6 +9,7 @@ const currentProgress = document.getElementById('current-progress');
 const progressContainer = document.getElementById('progress-container');
 const shuffleButton = document.getElementById('shuffle');
 
+
 const JetToTheWest = {
     songName : 'Jet To The West',
     artist : 'Lil Mosey',
