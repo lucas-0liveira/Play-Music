@@ -147,7 +147,15 @@ function shuffleButtonClicked(){
 }
 
 function repeatButtonClicked(){
-
+    if(repeatOn === false){
+        repeatOn = true;
+        repeatButton.classList.add('button-active');
+    }
+    else{
+        repeatOn = false;
+        sortedPlaylist = [...originalplaylist];
+        repeatButton.classList.remove('button-active');
+    }
 }
  
 initializeSong();
