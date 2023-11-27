@@ -154,7 +154,7 @@ function repeatButtonClicked(){
     else{
         repeatOn = false;
         sortedPlaylist = [...originalplaylist];
-        repeatButton.classList.remove('button-active');
+        repeatButton.classList.remove('button-active'); 
     }
 }
  
