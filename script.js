@@ -151,7 +151,7 @@ function repeatButtonClicked(){
         repeatOn = true;
         repeatButton.classList.add('button-active');
     }
-    else{
+    else {
         repeatOn = false;
         sortedPlaylist = [...originalplaylist];
         repeatButton.classList.remove('button-active');
