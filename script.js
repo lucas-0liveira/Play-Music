@@ -109,11 +109,12 @@ function nextSong(){
     playsong();
 }
 
-function updateProgressBar(){
+function updateProgress(){
     song.currentTime
     song.duration
     const barwidth = (song.currentTime/song.duration)*100;
     currentProgress.style.setProperty('--progress', `${barwidth}%`);
+    songTime.innerText = toHHMMSS(song.currentTime);
 }
 
 function jumpTo(event){
@@ -174,15 +175,11 @@ function toHHMMSS(originalNumber){
     let min = Math.floor((originalNumber - hours * 3600) / 60);
     let sec = Math.floor(originalNumber - hours * 3600 - min * 60);
 
-    return `${hours.toString().padStart(2, '0')} :${min.toString().padStart(2, '0')} :${sec.toString().padStart(2, '0')}`;
-}
-
-function updateCurrentTime(){
-    songTime.innerText = toHHMMSS(song.currentTime);
+    return `${hours.toString().padStart(2, '0')}:${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
 }
 
 function updateTotalTime(){
-    totalTime.innerText = song.duration;
+    totalTime.innerText = toHHMMSS(song.duration);
 }
 
 initializeSong();
@@ -190,7 +187,7 @@ initializeSong();
 play.addEventListener('click', playPauseDecider); 
 previous.addEventListener('click', previousSong);
 next.addEventListener('click',nextSong);
-song.addEventListener('timeupdate', updateProgressBar);
+song.addEventListener('timeupdate', updateProgress);
 song.addEventListener('ended', nextOrRepeat)
 song.addEventListener('loadedmetadata', updateTotalTime);
 progressContainer.addEventListener('click', jumpTo);
