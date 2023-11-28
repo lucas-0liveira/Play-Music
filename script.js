@@ -9,6 +9,8 @@ const currentProgress = document.getElementById('current-progress');
 const progressContainer = document.getElementById('progress-container');
 const shuffleButton = document.getElementById('shuffle');
 const repeatButton = document.getElementById('repeat');
+const songTime = document.getElementById('song-time');
+const totalTime = document.getElementById('total-time');
 
 
 const JetToTheWest = {
@@ -167,6 +169,22 @@ function nextOrRepeat(){
     }
 }
 
+function toHHMMSS(originalNumber){
+    let hours = Math.floor(originalNumber/3600);
+    let min = Math.floor((originalNumber - hours * 3600) / 60);
+    let sec = Math.floor(originalNumber - hours * 3600 - min * 60);
+
+    return `${hours.toString().padStart(2, '0')} :${min.toString().padStart(2, '0')} :${sec.toString().padStart(2, '0')}`;
+}
+
+function updateCurrentTime(){
+    songTime.innerText = toHHMMSS(song.currentTime);
+}
+
+function updateTotalTime(){
+    totalTime.innerText = song.duration;
+}
+
 initializeSong();
 
 play.addEventListener('click', playPauseDecider); 
@@ -174,6 +192,7 @@ previous.addEventListener('click', previousSong);
 next.addEventListener('click',nextSong);
 song.addEventListener('timeupdate', updateProgressBar);
 song.addEventListener('ended', nextOrRepeat)
+song.addEventListener('loadedmetadata', updateTotalTime);
 progressContainer.addEventListener('click', jumpTo);
 shuffleButton.addEventListener('click', shuffleButtonClicked);
 repeatButton.addEventListener('click', repeatButtonClicked);
