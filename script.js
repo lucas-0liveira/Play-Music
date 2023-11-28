@@ -175,7 +175,7 @@ function toHHMMSS(originalNumber){
     let min = Math.floor((originalNumber - hours * 3600) / 60);
     let sec = Math.floor(originalNumber - hours * 3600 - min * 60);
 
-    return `${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+    return `${min.toString().padStart(1, '0')}:${sec.toString().padStart(2, '0')}`;
 }
 
 function updateTotalTime(){
