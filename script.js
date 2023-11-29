@@ -15,24 +15,24 @@ const totalTime = document.getElementById('total-time');
 
 
 const JetToTheWest = {
-    songName : 'Jet To The West',
-    artist : 'Lil Mosey',
-    file : 'Jet_To_The_West',
-    liked : false,
+    songName: 'Jet To The West',
+    artist: 'Lil Mosey',
+    file: 'Jet_To_The_West',
+    liked: false,
 };
 
 const LuxoNoMorro = {
-    songName : 'LUXO NO MORRO',
-    artist : 'Veigh',
-    file : 'Luxo_No_Morro',
-    liked : false,
+    songName: 'LUXO NO MORRO',
+    artist: 'Veigh',
+    file: 'Luxo_No_Morro',
+    liked: false,
 };
 
 const LouisV = {
-    songName : 'louis v, menina linda ',
-    artist : 'Sidoka',
-    file : 'Louis_V',
-    liked : false,
+    songName: 'louis v, menina linda ',
+    artist: 'Sidoka',
+    file: 'Louis_V',
+    liked: false,
 };
 
 const Planos = {
