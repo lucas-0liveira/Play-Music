@@ -89,10 +89,6 @@ button{
   color:rgb(0 ,183, 107);
 }
 
-.button-active2{
-  color: white;
-}
-
 #time-box{
   display: flex;
   flex-direction: row;
