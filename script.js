@@ -87,6 +87,13 @@ function playPauseDecider(){
     }
 }
 
+function likeButtonRender(){
+    if(sortedPlaylist[index].liked){
+        likeButton.querySelector('.bi').classList.remove('bi-heart');
+        likeButton.querySelector('bi').classList.add('bi-heart-fill');
+    }
+}
+
 function initializeSong(){
     cover.src = `images/${sortedPlaylist[index].file}.jpeg`;
     song.src = `songs/${sortedPlaylist[index].file}.mp3`;
