@@ -25,7 +25,7 @@ const LuxoNoMorro = {
     songName: 'LUXO NO MORRO',
     artist: 'Veigh',
     file: 'Luxo_No_Morro',
-    liked: false,
+    liked: true,
 };
 
 const LouisV = {
@@ -87,11 +87,25 @@ function playPauseDecider(){
     }
 }
 
+function likeButtonRender(){
+    if(sortedPlaylist[index].liked === true){
+        likeButton.querySelector('.bi').classList.remove('bi-heart');
+        likeButton.querySelector('.bi').classList.add('bi-heart-fill');
+        likeButton.classList.add('button-active');
+    }
+    else {
+        likeButton.querySelector('.bi').classList.add('bi-heart');
+        likeButton.querySelector('.bi').classList.remove('bi-heart-fill');
+        likeButton.classList.remove('button-active');
+    }
+}
+
 function initializeSong(){
     cover.src = `images/${sortedPlaylist[index].file}.jpeg`;
     song.src = `songs/${sortedPlaylist[index].file}.mp3`;
     songName.innerText = sortedPlaylist[index].songName;
     bandName.innerText = sortedPlaylist[index].artist;
+    likeButtonRender();
 }
 
 function previousSong(){
