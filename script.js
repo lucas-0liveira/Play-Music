@@ -17,37 +17,43 @@ const totalTime = document.getElementById('total-time');
 const JetToTheWest = {
     songName : 'Jet To The West',
     artist : 'Lil Mosey',
-    file : 'Jet_To_The_West'
+    file : 'Jet_To_The_West',
+    liked : false,
 };
 
 const LuxoNoMorro = {
     songName : 'LUXO NO MORRO',
     artist : 'Veigh',
-    file : 'Luxo_No_Morro'
+    file : 'Luxo_No_Morro',
+    liked : false,
 };
 
 const LouisV = {
     songName : 'louis v, menina linda ',
     artist : 'Sidoka',
-    file : 'Louis_V'
+    file : 'Louis_V',
+    liked : false,
 };
 
 const Planos = {
     songName : 'Planos ft. Nate Shawty!',
     artist : 'Pedrwthekid',
-    file : 'planos'
+    file : 'planos',
+    liked : false,
 };
 
 const Sommelier = {
     songName : 'Sommelier',
     artist : 'Sidoka',
-    file : 'sommelier'
+    file : 'sommelier',
+    liked : false,
 };
 
 const Bando = {
     songName : 'Bando',
     artist : 'Vinnte$',
-    file : 'bando'
+    file : 'bando',
+    liked : false,
 };
 
 let isPlaying = false;
