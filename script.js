@@ -91,6 +91,12 @@ function likeButtonRender(){
     if(sortedPlaylist[index].liked){
         likeButton.querySelector('.bi').classList.remove('bi-heart');
         likeButton.querySelector('bi').classList.add('bi-heart-fill');
+        likeButton.classList.add('button-active2');
+    }
+    else {
+        likeButton.querySelector('.bi').classList.add('bi-heart');
+        likeButton.querySelector('bi').classList.remove('bi-heart-fill');
+        likeButton.classList.remove('button-active2'); 
     }
 }
 
@@ -99,6 +105,7 @@ function initializeSong(){
     song.src = `songs/${sortedPlaylist[index].file}.mp3`;
     songName.innerText = sortedPlaylist[index].songName;
     bandName.innerText = sortedPlaylist[index].artist;
+    likeButtonRender();
 }
 
 function previousSong(){
