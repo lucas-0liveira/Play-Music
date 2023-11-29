@@ -36,24 +36,24 @@ const LouisV = {
 };
 
 const Planos = {
-    songName : 'Planos ft. Nate Shawty!',
-    artist : 'Pedrwthekid',
-    file : 'planos',
-    liked : false,
+    songName: 'Planos ft. Nate Shawty!',
+    artist: 'Pedrwthekid',
+    file: 'planos',
+    liked: false,
 };
 
 const Sommelier = {
-    songName : 'Sommelier',
-    artist : 'Sidoka',
-    file : 'sommelier',
-    liked : false,
+    songName: 'Sommelier',
+    artist: 'Sidoka',
+    file: 'sommelier',
+    liked: false,
 };
 
 const Bando = {
-    songName : 'Bando',
-    artist : 'Vinnte$',
-    file : 'bando',
-    liked : false,
+    songName: 'Bando',
+    artist: 'Vinnte$',
+    file: 'bando',
+    liked: false,
 };
 
 let isPlaying = false;
