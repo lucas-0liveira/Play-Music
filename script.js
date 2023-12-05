@@ -25,7 +25,7 @@ const LuxoNoMorro = {
     songName: 'LUXO NO MORRO',
     artist: 'Veigh',
     file: 'Luxo_No_Morro',
-    liked: true,
+    liked: false,
 };
 
 const LouisV = {
