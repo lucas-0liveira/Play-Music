@@ -205,10 +205,10 @@ function updateTotalTime(){
 
 function likeButtonClicked(){
     if(sortedPlaylist[index].liked === false){
-       sortedPlaylist[index].liked === true;
+       sortedPlaylist[index].liked = true;
     }
     else{
-        sortedPlaylist[index].liked === false;
+        sortedPlaylist[index].liked = false;
     }
     likeButtonRender();
 }
