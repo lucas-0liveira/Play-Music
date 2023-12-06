@@ -214,7 +214,7 @@ function likeButtonClicked(){
 }
 
 initializeSong();
- 
+
 play.addEventListener('click', playPauseDecider); 
 previous.addEventListener('click', previousSong);
 next.addEventListener('click',nextSong);
