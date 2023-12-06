@@ -119,6 +119,17 @@ function previousSong(){
     playsong();
 }
 
+function nextSong(){
+    if(index === sortedPlaylist.length - 1){
+    index = 0;
+    }
+    else{
+        index += 1;
+    }
+    initializeSong();
+    playsong();
+}
+
 function updateProgress(){
     song.currentTime
     song.duration
