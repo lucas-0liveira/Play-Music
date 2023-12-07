@@ -37,7 +37,7 @@ const LouisV = {
 
 const Hope = {
     songName: 'Hope',
-    artist: 'xxxtentation',
+    artist: 'XXXTENTATION',
     file: 'hope',
     liked: false,
 }
