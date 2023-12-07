@@ -35,6 +35,13 @@ const LouisV = {
     liked: false,
 };
 
+const Hope = {
+    songName: 'Hope',
+    artist: 'xxxtentation',
+    file: 'hope',
+    liked: false,
+}
+
 const Planos = {
     songName: 'Planos ft. Nate Shawty!',
     artist: 'Pedrwthekid',
@@ -60,7 +67,7 @@ let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
 const originalplaylist = JSON.parse(localStorage.getItem("playlist")) ?? [JetToTheWest, 
-    LuxoNoMorro, LouisV, Planos, Sommelier, Bando];
+    LuxoNoMorro, LouisV, Planos, Sommelier, Bando, Hope];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
