@@ -59,7 +59,7 @@ const Bando = {
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = [JetToTheWest, LuxoNoMorro, LouisV, Planos, Sommelier, Bando];
+const originalplaylist = JSON.parse(localStorage.getItem("playlist"));
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
