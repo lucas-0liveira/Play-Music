@@ -211,7 +211,7 @@ function likeButtonClicked(){
         sortedPlaylist[index].liked = false;
     }
     likeButtonRender();
-    localStorage.setItem("playlist", originalplaylist);
+    localStorage.setItem("playlist", JSON.stringify(originalplaylist));
 }
 
 initializeSong();
