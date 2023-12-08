@@ -14,6 +14,13 @@ const songTime = document.getElementById('song-time');
 const totalTime = document.getElementById('total-time');
 
 
+const TrabalhoDuro = {
+    songName: 'Trabalho Duro',
+    artist: '2metro',
+    file: 'Trabalho_Duro',
+    liked: false,
+}
+
 const JetToTheWest = {
     songName: 'Jet To The West',
     artist: 'Lil Mosey',
@@ -66,7 +73,7 @@ const Bando = {
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = JSON.parse(localStorage.getItem("playlist")) ?? [JetToTheWest, 
+const originalplaylist = JSON.parse(localStorage.getItem("playlist")) ?? [TrabalhoDuro, JetToTheWest, 
     LuxoNoMorro, LouisV, Planos, Sommelier, Bando, Hope];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
