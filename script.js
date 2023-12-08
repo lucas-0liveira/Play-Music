@@ -21,6 +21,13 @@ const TrabalhoDuro = {
     liked: false,
 }
 
+const Ultimamente = {
+    songName: 'Ultimamente (Speed)',
+    artist: 'Dreko',
+    file: 'Ultimamente',
+    liked: false,
+}
+
 const JetToTheWest = {
     songName: 'Jet To The West',
     artist: 'Lil Mosey',
@@ -73,8 +80,8 @@ const Bando = {
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = JSON.parse(localStorage.getItem("playlist")) ?? [TrabalhoDuro, JetToTheWest, 
-    LuxoNoMorro, LouisV, Planos, Sommelier, Bando, Hope];
+const originalplaylist = JSON.parse(localStorage.getItem("playlist")) ?? [TrabalhoDuro, Ultimamente, JetToTheWest, 
+    LuxoNoMorro, LouisV, Hope, Planos, Sommelier, Bando];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
