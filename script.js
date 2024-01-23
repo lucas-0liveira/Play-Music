@@ -72,7 +72,7 @@ const Sommelier = {
 
 const Baby = {
     songName: 'Baby ce é gata',
-    artist: 'MU540',
+    artist: 'Kyan, MU540',
     file: 'Baby',
     liked: false,
 };
