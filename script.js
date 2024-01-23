@@ -77,11 +77,25 @@ const Baby = {
     liked: false,
 };
 
+const Cara = {
+    songName: 'Fala na Cara',
+    artist: 'Mc Paiva',
+    file: 'Fala_na_Cara',
+    liked: false,
+}
+
+const About = {
+    songName: 'Meddle About',
+    artist: 'Chase Atlantic',
+    file: 'Meddle_About',
+    liked: false,
+}
+
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
 const originalplaylist = [TrabalhoDuro, Ultimamente, JetToTheWest, 
-    LuxoNoMorro, LouisV, Hope, Planos, Sommelier, Baby];
+    LuxoNoMorro, LouisV, Hope, Planos, Sommelier, Baby, Cara, About];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
