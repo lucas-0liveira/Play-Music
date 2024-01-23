@@ -19,14 +19,14 @@ const TrabalhoDuro = {
     artist: '2metro',
     file: 'Trabalho_Duro',
     liked: false,
-}
+};
 
 const Ultimamente = {
     songName: 'Ultimamente (Speed)',
     artist: 'Dreko',
     file: 'Ultimamente',
     liked: false,
-}
+};
 
 const JetToTheWest = {
     songName: 'Jet To The West',
@@ -54,7 +54,7 @@ const Hope = {
     artist: 'XXXTENTATION',
     file: 'hope',
     liked: false,
-}
+};
 
 const Planos = {
     songName: 'Planos ft. Nate Shawty!',
@@ -70,18 +70,18 @@ const Sommelier = {
     liked: false,
 };
 
-const Bando = {
-    songName: 'Bando',
-    artist: 'Vinnte$',
-    file: 'bando',
+const Baby = {
+    songName: 'Baby ce é gata',
+    artist: 'MU540',
+    file: 'Baby',
     liked: false,
 };
 
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
-const originalplaylist = JSON.parse(localStorage.getItem("playlist")) ?? [TrabalhoDuro, Ultimamente, JetToTheWest, 
-    LuxoNoMorro, LouisV, Hope, Planos, Sommelier, Bando];
+const originalplaylist = [TrabalhoDuro, Ultimamente, JetToTheWest, 
+    LuxoNoMorro, LouisV, Hope, Planos, Sommelier, Baby];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
