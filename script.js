@@ -33,7 +33,7 @@ const JetToTheWest = {
     artist: 'Lil Mosey',
     file: 'Jet_To_The_West',
     liked: false,
-};
+}; 
 
 const LuxoNoMorro = {
     songName: 'LUXO NO MORRO',
