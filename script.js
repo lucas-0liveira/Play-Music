@@ -91,11 +91,18 @@ const About = {
     liked: false,
 }
 
+const Bando = {
+    songName: 'Bando',
+    artist: 'Baby V',
+    file: 'Bando',
+    liked: false,
+}
+
 let isPlaying = false;
 let isShuffled = false;
 let repeatOn = false;
 const originalplaylist = [TrabalhoDuro, Ultimamente, JetToTheWest, 
-    LuxoNoMorro, LouisV, Hope, Planos, Sommelier, Baby, Cara, About];
+    LuxoNoMorro, LouisV, Hope, Planos, Sommelier, Baby, Cara, About, Bando];
 let sortedPlaylist = [...originalplaylist];
 let index = 0;
 
