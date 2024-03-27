@@ -18,7 +18,7 @@ Este é um player de música simples desenvolvido em JavaScript, permitindo repr
 ## Como usar:
 
 - 1º Clone este repositório ou baixe os arquivos ZIP;
-- 2º Abra o projeto utilizando a extensão no VSCode "Go Live", assim irá abrir o player de música em seu navegador;
+- 2º Abra o projeto no VSCode e após isso utilizar a extensão "Go Live", assim irá abrir o player de música em seu navegador;
 - 3º Reproduza a música desejada;
 - 4º Você consegue pausar, pular para a próxima ou mesmo retroceder a música;
 - 5º Ajuste a velocidade da música clicando na barra de progresso;
