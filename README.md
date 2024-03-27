@@ -18,6 +18,6 @@
 ## Como usar:
 
  1º Clone este repositório ou baixe os arquivos ZIP;
- 2º Abra index.html em seu navegador;
+ 2º Abra o projeto utilizando a extensão "Go Live" em seu navegador;
  3º Adicione suas próprias músicas do seu gosto na pasta 'songs';
  4º Adicione a imagem da música na pasta 'images' obs:. A capa da Música tem que ser 520px x 534px;
