@@ -14,3 +14,5 @@
 - Barra de progresso para acompanhar a reprodução;
 - Design minimalista e responsivo;
 - Álbum do artista ao reproduzir a música;
+
+## Como usar:
