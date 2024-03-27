@@ -17,5 +17,7 @@
 
 ## Como usar:
 
- 1º Clone este repositório ou baixe os arquivos ZIP
- 2º Abra index.html em seu navegador
+ 1º Clone este repositório ou baixe os arquivos ZIP;
+ 2º Abra index.html em seu navegador;
+ 3º Adicione suas próprias músicas à pasta 'Songs';
+ 4º Pode adicionar também a imagem da música na pasta 'images';
