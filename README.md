@@ -16,3 +16,6 @@
 - Álbum do artista ao reproduzir a música;
 
 ## Como usar:
+
+ 1º Clone este repositório ou baixe os arquivos ZIP
+ 2º Abra index.html em seu navegador
